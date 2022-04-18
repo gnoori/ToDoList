@@ -1,0 +1,23 @@
+h1 {
+    color: rgb(137, 16, 16);
+}
+body {
+    margin-left: 10px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-bottom: 10px;
+}
+.input-group{
+    width: 50%;
+}
+.table {
+    width: 50%
+}
+.alert {
+    width: 35%;
+}

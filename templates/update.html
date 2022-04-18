@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>To Do List</title>
+{% endblock %}
+
+{% block body %}
+
+<div style="margin: 10px;">
+    <h1 style="color: rgb(137, 16, 16)">Update your task</h1>
+    <div class="input-group input-group-lg">
+        <form action="/todo/update/{{task.id}}" method="POST">
+            <input style="margin-bottom: 10px;" type="text" class="form-control" name="content" id="content" value="{{task.content}}">
+            <input style="margin-bottom: 10px;" class="btn btn-info" type="submit" value="Update">
+        </form>
+    </div>
+    <button button type="button" class="btn btn-warning" onclick="window.location.href='http:\/\/localhost:5000\/todo'">Check your todo list</button>
+</div>
+
+
+{% endblock %}
